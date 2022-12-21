@@ -14,13 +14,14 @@ void setup () {
   //size(500,600); //Remind you of Display Geometry
   minim = new Minim(this); //load from data directory, loadFile should also load from project folder, like loadimage
   song1 = minim.loadFile("../Music/Ghost_Walk.mp3");//able to pass absolute path, file name & extension, and URL
-  song1.play(); //Parameter is milli-seconds from start of audio file to start playing (illustrate with examples)
 }//End setup
 //
 void draw() {
 }//End draw
 //
 void keyPressed() {
+  if ( key=='P' || key == 'p' ) song1.play(); //Parameter is milli-seconds from start of audio file to start playing (illustrate with examples)
+  if ( key=='L' || key == 'l' ) song1.loop(0); //Parameter is milli-seconds from start of audio file to start playing (illustrate with examples)
 }//End keyPressed
 //
 void mouseClicked() {
