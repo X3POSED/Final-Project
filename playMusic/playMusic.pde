@@ -21,7 +21,8 @@ void draw() {
 //
 void keyPressed() {
   if ( key=='P' || key == 'p' ) song1.play(); //Parameter is milli-seconds from start of audio file to start playing (illustrate with examples)
-  if ( key=='L' || key == 'l' ) song1.loop(0); //Parameter is milli-seconds from start of audio file to start playing (illustrate with examples)
+  int loopNum = 2; //Local Variable plays once and loops twice
+  if ( key=='L' || key == 'l' ) song1.loop(loopNum-1); //Parameter is milli-seconds from start of audio file to start playing (illustrate with examples)
 }//End keyPressed
 //
 void mouseClicked() {
